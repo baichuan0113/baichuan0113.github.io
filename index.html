@@ -1,132 +1,106 @@
 <!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baichuan Li</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-        }
-        .header {
-            background: #007bff;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .content {
-            padding: 20px;
-        }
-        .section-title {
-            border-bottom: 2px solid #007bff;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .contact-form {
-            max-width: 600px;
-            margin: auto;
-        }
-        .footer {
-            background: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <title>Baichuan Li</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Baichuan Li</h1>
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Baichuan Li</a>
     </div>
 
-    <div class="content container">
-        <!-- Introduction Section -->
-        <section id="introduction">
-            <h2 class="section-title">Introduction</h2>
-            <p>Hello! I'm a Master of Science Computer Science student at Texas A&M University. My research interests include .</p>
-        </section>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li> 
+        <li><a href="files/cv.pdf">CV</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        <!-- Education Section -->
-        <section id="education">
-            <h2 class="section-title">Education</h2>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <h5>Master of Science Computer Science</h5>
-                    <p>Texas A&M University, 01/2023 - Present</p>
-                </li>
-                <li class="list-group-item">
-                    <h5>Bachelor of Science in Mathematics</h5>
-                    <p>University of Illinois at Urbana-Champaign, Year of completion: 2022</p>
-                </li>
-            </ul>
-        </section>
+<!-- Page Content -->
+<div class="container content">
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Project Title 1</h5>
-                    <p>A brief description of your project. <a href="#" target="_blank">Learn more</a></p>
-                </div>
-                <div class="col-md-6">
-                    <h5>Project Title 2</h5>
-                    <p>A brief description of your project. <a href="#" target="_blank">Learn more</a></p>
-                </div>
+    <div class="row">
+
+        <!-- Entries Column -->
+        <div class="col-md-8" id="home">
+            <!-- Main Image -->
+            <img class="img-responsive main-image" src="photo.gif" alt="Main Image"><br>
+            
+            <div class="content-section">        
+                <H2>Short Bio</H2>        
+                <p>Hi, my name is Baichuan Li, I'm a second year MS Computer Science student at Texas A&M University. Before that, I obtain my Bachelor of Science in Mathematics degree from University of Illinois at Urbana-Champaign in 2022. </p>
             </div>
-        </section>
+        </div> 
+
+        <!-- Contact Info on the Sidebar -->
+        <div class="col-md-4">
+            <div class="sidebar-section">
+                <h3>Baichuan Li</h3>
+                <p><b>bl30@tamu.edu</b></p>
+                <p>
+                    Department of Computer Science & Engineering<br>
+                    Texas A&M University<br>
+                    College Station, TX <br>
+                </p>
+            </div>
+            
+            <!-- Links on the Sidebar -->
+            <div class="sidebar-section sidebar-links">
+                <a href="https://scholar.google.com/citations?user=Eoql9jIAAAAJ">Google Scholar</a> 
+                <a href="https://www.linkedin.com/in/baichuan-li-b0b694184">LinkedIn</a>
+            </div>
+        </div>
 
         <!-- Publications Section -->
-        <section id="publications">
+        <div class="col-md-8 content-section" id="publications">    
             <h2 class="section-title">Publications</h2>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <h5>Publication Title 1</h5>
-                    <p>Authors: [Author 1], [Author 2], [Author 3]</p>
-                    <p>Conference/Journal, Year</p>
-                </li>
-                <li class="list-group-item">
-                    <h5>Publication Title 2</h5>
-                    <p>Authors: [Author 1], [Author 2], [Author 3]</p>
-                    <p>Conference/Journal, Year</p>
-                </li>
+            <strong>Conference Journals</strong><br/>
+            <ul>
+                <li class="paper"><a href="https://www.e3s-conferences.org/articles/e3sconf/abs/2021/51/e3sconf_eilcd2021_03032/e3sconf_eilcd2021_03032.html">Portfolio construction for pharmaceutical industry.</a> - Sun, Xiqing, Baichuan Li, and Huatian Pang.</li>
             </ul>
-        </section>
+        </div>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="section-title">Contact</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </section>
+        <!-- CV Section -->
+        <div class="col-md-8 content-section" id="cv">
+            <h2 class="section-title">Curriculum Vitae</h2>
+            <p>Click <a href="files/cv.pdf">here</a> to see more details about my academic and professional background.</p>
+        </div>
+        
     </div>
+</div>
+<!-- /.container -->
 
-    <div class="footer">
-        <p>&copy; 2024 Baichuan Li. All rights reserved.</p>
-    </div>
+<!-- Footer -->
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div class="footer">
+    <p>&copy; 2024 Baichuan Li. All rights reserved.</p>
+</div>
+
 </body>
 </html>
