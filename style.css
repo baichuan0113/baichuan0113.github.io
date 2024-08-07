@@ -1,4 +1,10 @@
 body {
+    background-image: url('files/home.jpg');
+    background-size: cover; /* Cover the entire page */
+    
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Make the background fixed */
+    padding: 0;
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
@@ -12,7 +18,7 @@ body {
 }
 
 .navbar-inverse {
-    background-color: #333;
+    background-color: #052445;
     border-color: #333;
 }
 
@@ -25,7 +31,7 @@ body {
 }
 
 .header {
-    background: #007bff;
+    background: #052445;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -42,7 +48,7 @@ body {
 }
 
 .section-title {
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #052445;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -53,7 +59,7 @@ body {
 }
 
 .footer {
-    background: #007bff;
+    background: #052445;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -65,23 +71,40 @@ body {
 
 .main-image {
     max-height: 300px;
-    margin: 0 auto;
+    border-radius: 50%;
     display: block;
+    width: 57%;
+    align-items: start;
+}
+.sidebar {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+    width: 30%; /* Adjust width as needed */
 }
 
 .sidebar-section {
     background: #f8f8f8;
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-section h3 {
     font-family: 'Oswald', sans-serif;
+
+}
+.sidebar-links {
+    display: flex;
+    flex-direction: column; /* Arranges the links in a column */
+    
 }
 
 .sidebar-links a {
-    color: #007bff;
+    color: #f0f6fd;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
@@ -108,10 +131,240 @@ body {
 }
 
 a {
-    color: #007bff;
+    color: #0d2034;
 }
 
 a:hover {
-    color: #0056b3;
+    color: #0d2034;
     text-decoration: none;
 }
+
+
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.project-block {
+    display: flex;
+    align-items: center;
+    width: 80%; /* Adjust this width as needed */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #0c0c0c; 
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+    background-color: #f0f6fd;
+}
+
+.project-image {
+    width: 300px; /* Adjust the width as needed */
+    height: 150px;
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-image:hover::after {
+    content: 'Click to view';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.project-details {
+    flex: 1; /* Takes up the remaining space */
+}
+
+.project-details h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.project-details p {
+    margin: 5px 0;
+    color: #000000;
+}
+
+.project-details a {
+    text-decoration: none;
+    color: #111212; /* Link color */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.project-details a:hover {
+    text-decoration: underline; /* Optional: Underline link on hover */
+}
+
+.project-details p a {
+    font-size: 14px; /* Smaller font size for links in the second paragraph */
+    font-weight: normal;
+    color: #0056b3;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#image-section {
+    order: 1; /* Ensure the image section is first */
+}
+
+#home {
+    order: 2; /* Ensure the content section is second */
+}
+
+.main-image {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.content-section {
+    padding-left: 15px; /* Add some padding for better appearance */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 10px; /* Adds space between the buttons */
+    font-size: 16px;
+    background-color: #052445; /* Primary button color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.center-text {
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+    height: 150px;
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90vw; /* Adjust based on viewport width */
+    max-height: 90vh; /* Adjust based on viewport height */
+    width: auto;
+    height: auto;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #ffffff; /* Lighter color for the close button */
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #ddd;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+
