@@ -9,7 +9,7 @@ redirect_from:
 
 Hi, I'm Baichuan Li. I hold an M.S. in Computer Science from [Texas A&M University](https://engineering.tamu.edu/cse/) (2025) and a B.S. in Mathematics from the [University of Illinois at Urbana-Champaign](https://illinois.edu/) (2022).
 
-My work sits at the intersection of **human-computer interaction, AI, and education**. During my master's I worked with Prof. Tracy Hammond at Texas A&M on pen-gesture analysis of preschool-age children, and with the Computer Science Education Group at Utah State University on using large language models to generate formative feedback for introductory programming students. My master's thesis, [LabelHelper](/portfolio/labelhelper/), explored how an LLM-based chatbot can teach senior citizens to label images with Roboflow, making modern AI tooling accessible to older adults.
+My work sits at the intersection of **human-computer interaction, AI, and education**. During my master's I worked with Prof. Tracy Hammond at Texas A&M on pen-gesture analysis of preschool-age children, and with the Computer Science Education Group at Utah State University on using large language models to generate formative feedback for introductory programming students. My master's thesis, LabelHelper, explored how an LLM-based chatbot can teach senior citizens to label images with Roboflow, making modern AI tooling accessible to older adults.
 
 Research interests
 ======

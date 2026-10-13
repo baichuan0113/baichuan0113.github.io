@@ -47,16 +47,8 @@ Projects
 * **NXTFolio** (01/2023 - 05/2023) - A visual "LinkedIn" for creative and fashion professionals, built with Ruby on Rails. [GitHub](https://github.com/baichuan0113/NXTFolio)
 * **Pharmaceutical Portfolio Optimization** (12/2020 - 05/2021) - Monte Carlo and Sharpe-ratio portfolio construction for pharmaceutical assets. [PDF](/files/portfolio-construction-pharmaceutical-2021.pdf)
 
-See the [Projects](/portfolio/) page for details.
-
 Technical skills
 ======
 * **Programming languages:** Java, Python, C++, C, Ruby on Rails, MySQL, Shell, JavaScript, HTML, CSS
 * **Frameworks and libraries:** Express, Node.js, Pandas, OpenCV, React, Unity, Robot Operating System (ROS)
 * **Tools:** Git, GitHub, Cucumber, Bootstrap, Linux, RESTful APIs, SaaS, automated testing, LaTeX
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>

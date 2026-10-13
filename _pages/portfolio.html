@@ -7,6 +7,10 @@ author_profile: true
 
 {% include base_path %}
 
+{% if site.portfolio.size == 0 %}
+  <p>Projects will be listed here soon.</p>
+{% endif %}
+
 
 {% for post in site.portfolio reversed %}
   {% include archive-single.html %}
